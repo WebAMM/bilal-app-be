@@ -40,6 +40,12 @@ device.on('error', error => {
 });
 
 
+app.post('/', (req, res) => {
+    res.status(200).json({
+        message: 'Initial Route Runing'
+    })
+})
+
 
 // REST endpoint to publish MQTT message
 app.post('/mqtt/publish', (req, res) => {
