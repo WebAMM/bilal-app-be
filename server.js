@@ -40,7 +40,7 @@ device.on('error', error => {
 });
 
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).json({
         message: 'Initial Route Runing'
     })
